@@ -1,0 +1,17 @@
+Set Artboard and image size to desired scale (the exact size doesn't 
+matter too much since it's a vector image.)
+
+Create Rectangular grid, found under line tool. Click anywhere on image,
+set size of grid and number of dividers (# of dividers is one less
+that number of boxes). Align grid with artboard. 
+
+Create Live Paint bucket. Found under some tool that I forgot the name of. 
+With the grid selected, and live paint bucket activated, click on the grid to 
+assign bucket to grid. 
+
+Set your color and paint. 
+
+When done, set the stroke color of the grid to transparent(white w/
+a red line through it) To see what it looks like without it. 
+
+note: all things painted on the grid will be more or less attached to it. 
