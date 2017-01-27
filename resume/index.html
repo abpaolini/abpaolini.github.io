@@ -29,9 +29,20 @@
 	
 	<style>
 		#maincontainer { padding-top: 70px; }
-		.resume-container { /* saying this is how we want the resume-container to look */
+		.resume { /* saying this is how we want the resume to look */
 			background-color: white;
 			box-shadow: 2px 2px 5px #999999; /* built-in CSS Property */
+		}
+		.resume h2 { /* find all elements that have the class resume, and find all h2 tags and apply these changes to it */
+				font-size: 31px;
+				font-weight: bold;
+		}
+		.resume h3 {
+			color: white;
+			background-color: black;
+			padding: 3px
+			font-size: 14px;
+			font-weight: bold;
 		}
 	</style>
 	
@@ -72,11 +83,45 @@
     </div>
     <!-- /.container -->
 </nav>
-	<div class="container" id="maincontainer"><p>Andrew Paolini's Resume</p>
-		<div class="resume-container">
+	<div class="container" id="maincontainer">
+		<div class="resume">
 			<div style="text-align: center;">
-				<h1>Andrew Benjamin Paolini</h1>
+				<h2>Andrew Benjamin Paolini</h2>
+				<a href="mailto:andrew.bpaolini@gmail.com">andrew.bpaolini@gmail.com</a><br> <!-- line break -->
+				<a href="https://www.andrewbpaolini.com">https://www.andrewbpaolini.com</a>
+				<hr> <!-- thematic line break -->
 			</div>
+			<h3>Summary of Qualifications</h3>
+			<ul style="list-style-position: outside;">
+			</ul>
+			<h3>Education</h3>
+			<ul style="list-style-position: outside;">
+				<li>
+					<strong>Bachelor of Science in Cognitive Science,</strong> March 2016<br>
+					University of California, Santa Cruz, CA
+				</li>
+			</ul>
+			<h3>Computer Skills</h3>
+			<ul style="list-style-position: outside;">
+				<li>
+				<strong>Languages: </strong>Java, Python, C, C#, HTML5/JavaScript, GameMaker/GML
+				</li>
+				<li>
+				<strong>Tools: </strong>Git/GitHub, Unity, Aptana, Dropbox, EPIC Cognitive Architecture, Praat, Adobe Illustrator</strong>
+				</li>
+			<!--
+			<table class="skills-table">
+				<tr>
+					<td>Languages:</td>
+					<td>Java, Python, C, C#, HTML5/JavaScript, GameMaker/GML</td>
+				</tr>
+				<tr>
+					<td>Tools:</td>
+					<td>Git/GitHub, Unity, Aptana, Dropbox, EPIC Cognitive Architecture, Praat, Adobe Illustrator</td>
+				</tr>
+			-->
+			</ul>
+			<h3></h3>
 		</div>
 	</div>
 	<script src="js/scripts.js"></script>
