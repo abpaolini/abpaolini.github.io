@@ -28,6 +28,21 @@
 	</style>
 	<style>
 		#maincontainer { padding-top: 70px; }
+		.projects { /* saying this is how we want the projects page to look */
+			background-color: white;
+			box-shadow: 2px 2px 5px #999999; /* built-in CSS Property */
+		}
+		.projects h2 { /* find all elements that have the class projects, and find all h2 tags and apply these changes to it */
+				font-size: 31px;
+				font-weight: bold;
+		}
+		.projects h3 {
+			color: white;
+			background-color: black;
+			padding: 3px
+			font-size: 14px;
+			font-weight: bold;
+		}
 	</style>
 	
 </head>
@@ -66,9 +81,23 @@
             </div>
     </div>
     <!-- /.container -->
+
+	<!-- Page Content -->
 </nav>
-	<div class="container" id="maincontainer"><p>My Projects</p>
-	<a href="cktr/">Click here to go to CKtR, or Curiosity Killed the Rover</a></div>
+	<div class="container" id="maincontainer">
+		<div class="projects">
+			<div style="text-align: left;">
+				<h2>Projects</h2>
+				<hr> <!-- thematic line break -->
+			</div>
+			<p>Here you can learn about some of the projects I have worked on</p>
+			<hr>
+			<h3>Curiosity Killed the Rover<h3>
+			<a href="cktr/">Click here to go to CKtR, or Curiosity Killed the Rover</a>
+			<h3>PUFF</h3>
+			
+		</div>
+	</div>
 	<script src="js/scripts.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
