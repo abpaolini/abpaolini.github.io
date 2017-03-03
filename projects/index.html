@@ -28,6 +28,25 @@
 	</style>
 	<style>
 		#maincontainer { padding-top: 70px; }
+		.projects { /* saying this is how we want the projects page to look */
+			background-color: white;
+			box-shadow: 2px 2px 5px #999999; /* built-in CSS Property */
+		}
+		.projects h2 { /* find all elements that have the class projects, and find all h2 tags and apply these changes to it */
+				font-size: 31px;
+				font-weight: bold;
+		}
+		.projects h3 {
+			color: white;
+			background-color: black;
+			padding: 3px
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.projects h4 { /* find all elements that have the class projects, and find all h4 tags and apply these changes to it */
+				font-size: 18px;
+				font-weight: bold;
+		}
 	</style>
 	
 </head>
@@ -66,9 +85,53 @@
             </div>
     </div>
     <!-- /.container -->
+
+	<!-- Page Content -->
 </nav>
-	<div class="container" id="maincontainer"><p>My Projects</p>
-	<a href="cktr/">Click here to go to CKtR, or Curiosity Killed the Rover</a></div>
+	<div class="container" id="maincontainer">
+		<div class="projects">
+			<div style="text-align: left;">
+				<h2>Projects</h2>
+				<hr> <!-- thematic line break -->
+			</div>
+			<h4>Here you can learn about some of the projects I have worked on</h4>
+			<hr>
+			<h3>PUFF</h3>
+			<h4>Summary</h4>
+			<ul style="list-style-position: outside;">
+				<li>
+					Created a PC/Mac game with minimalist vector graphics and mouse controls.
+				</li>
+				<li>
+					Finalist for Foundation Award and Audio Award (UCSC 2012)
+				</li>
+				<li>
+					Responsible for level design, enemy and world objects design and concepts, implementation of mechanics in GML code
+				</li>
+			</ul>
+			<h4></h4>
+			<h3>Curiosity Killed the Rover</h3>
+			<a href="cktr/">Click here to play CKtR, or Curiosity Killed the Rover</a>
+			<h4>Summary</h4>
+			A ten-week long project where I worked with a team to create a web game using Javascript & HTML
+			<h4>My Role</h4>
+			<ul style="list-style-position: outside;">
+				<li>
+					Invented the game concept and design.
+				</li>
+				<li>
+					Set up code framework for game in the Phaser game engine.
+				</li>
+				<li>
+					Taught rest of the team how to use source control with Bitbucket, how to get it to work with Phaser game engine and Aptana Studio, and was on-call for troubleshooting.
+				</li>
+				<li>
+					De facto team leader, coordinating and communicating with everyone to organize team meetings at school and team chats online,<br>
+					including group work on code together, and check-ins to make sure we were on schedule to meet deadlines.
+				</li>
+			</ul>
+		</div>
+	</div>
 	<script src="js/scripts.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
