@@ -33,10 +33,10 @@
 			box-shadow: 2px 2px 5px #999999; /* built-in CSS Property */
 		}
 		.projects h2 { /* find all elements that have the class projects, and find all h2 tags and apply these changes to it */
-				font-size: 31px;
-				font-weight: bold;
+			font-size: 31px;
+			font-weight: bold;
 		}
-		.projects h3 {
+		.projects h3 { /* no need for a dot before the name since h3 is just the name of an element, not a class */
 			color: white;
 			background-color: black;
 			padding: 3px
@@ -44,8 +44,22 @@
 			font-weight: bold;
 		}
 		.projects h4 { /* find all elements that have the class projects, and find all h4 tags and apply these changes to it */
-				font-size: 18px;
-				font-weight: bold;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.projects .container_projects { /* .container_projects is just the name I'm giving to the div. it is the 'div' that lets the comp know it's an empty box */
+			background-color: gray;
+			width: 100%;
+			font-size: 0;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.projects .screenshot { /* For a class need to put a dot before the name */
+			/* display: inline-block; */
+			width: 95%;
+			font-size: 1rem;
+			/* margin: 5px; */
 		}
 	</style>
 	
@@ -109,7 +123,28 @@
 					Responsible for level design, enemy and world objects design and concepts, implementation of mechanics in GML code
 				</li>
 			</ul>
-			<h4></h4>
+			<!-- Work in Progress -->
+			
+			<h4>Screenshots</h4>
+			<div class="container_projects">
+				<a href="/assets/Landing_Grounds.png" >
+					<img class="screenshot" src="/assets/Landing_Grounds.png">
+				</a>
+				<a href="/assets/Tutorial_Screen.png" >
+					<img class="screenshot" src="/assets/Tutorial_Screen.png">
+				</a>
+				<a href="/assets/Geyser_Eruption.png" >
+					<img class="screenshot" src="/assets/Geyser_Eruption.png">
+				</a>
+				<a href="/assets/Night_Sky.png" >
+					<img class="screenshot" src="/assets/Night_Sky.png">
+				</a>
+				<a href="/assets/Navigating_the_Cavern.png" >
+					<img class="screenshot" src="/assets/Navigating_the_Cavern.png">
+				</a>
+			</div>
+			
+			<!-- Work in Progress -->
 			<h3>Curiosity Killed the Rover</h3>
 			<a href="cktr/">Click here to play CKtR, or Curiosity Killed the Rover</a>
 			<h4>Summary</h4>
